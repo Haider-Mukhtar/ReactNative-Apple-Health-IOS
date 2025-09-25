@@ -77,7 +77,7 @@ export default function Index() {
     ) {
       Alert.alert(
         "Something Wrong",
-        "Please check permissions. Go to Settings > Health > Data Access & Devices > Lusie.",
+        "Please check permissions. Go to Settings > Health > Data Access & Devices > MyHealthApp.",
         [
           {
             text: "Go to settings",
@@ -106,7 +106,7 @@ export default function Index() {
     } catch (error) {
       Alert.alert(
         "Error",
-        "Unable to open Settings. Please go to Settings > Health > Data Access & Devices > Lusie."
+        "Unable to open Settings. Please go to Settings > Health > Data Access & Devices > MyHealthApp."
       );
       console.error("Error opening Settings:", error);
     }
@@ -180,7 +180,7 @@ export default function Index() {
         onPress={() => {
           Alert.alert(
             "Revoke Access",
-            "Please go to Settings > Health > Data Access & Devices > Lusie.",
+            "Please go to Settings > Health > Data Access & Devices > MyHealthApp.",
             [
               {
                 text: "Go to settings",
