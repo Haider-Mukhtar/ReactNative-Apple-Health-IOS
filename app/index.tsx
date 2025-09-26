@@ -68,7 +68,7 @@ export default function Index() {
     ]);
   }
 
-  if (success) {
+  if (success && hasPermissions) {
     if (
       steps === 0 &&
       calories === 0 &&
@@ -76,13 +76,13 @@ export default function Index() {
       sleep.length === 0
     ) {
       Alert.alert(
-        "Something Wrong",
-        "Please check permissions. Go to Settings > Health > Data Access & Devices > MyHealthApp.",
+        "No Health Data Available",
+        "Open the Apple Health app to view or add your health data for today.",
         [
           {
-            text: "Go to settings",
+            text: "Go to Health",
             onPress: () => {
-              handleRevokeAccess();
+              Linking.openURL("x-apple-health://");
             },
           },
           {
