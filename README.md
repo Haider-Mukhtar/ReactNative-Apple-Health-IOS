@@ -1,50 +1,65 @@
-# Welcome to your Expo app 👋
+# React Native Apple HealthKit Integration with Expo 🚀
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+![Banner](https://github.com/user-attachments/assets/e597e580-27e0-4b91-8a1f-72d6b59f4ee6)
 
-## Get started
+**A robust, TypeScript-based React Native Expo app demonstrating seamless integration with Apple HealthKit using `react-native-health`.**
 
-1. Install dependencies
+This repository provides a complete guide and codebase for integrating **Apple HealthKit** into a **React Native Expo** app. Fetch health data like steps, calories burned, heart rate, and sleep with ease, while handling permissions, errors, and best practices. Built with TypeScript for type safety, this project is perfect for developers building fitness or wellness apps in 2025! 🎉
 
-   ```bash
-   npm install
-   ```
+For a detailed step-by-step tutorial, check out our Medium post.
+**[Seamless Integration of Apple Health into Your React Native Expo App 🚀](https://medium.com/@haidermukhtar/seamless-integration-of-apple-health-into-your-react-native-expo-app-7e9ecade0ae8)**
 
-2. Start the app
+> **Note**: HealthKit is iOS-only. For Android, consider `react-native-health-connect`. Always test on a physical iOS device and comply with GDPR/HIPAA for user privacy.
 
-   ```bash
-   npx expo start
-   ```
+## 🎯 Features
+- Fetch **steps**, **calories burned**, **heart rate**, and **sleep** data from Apple Health.
+- Custom React hook for streamlined data fetching and permission handling.
+- Comprehensive error handling for permission denials and edge cases.
+- Expo dev client for native module support.
+- TypeScript for robust type safety.
+- Clean, reusable code structure for scalability.
 
-In the output, you'll find options to open the app in a
+## 📸 Demo
+![Demo](https://github.com/user-attachments/assets/ef9f6dc1-0600-44fc-855d-9b54c5136cc4)
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## 🚀 Getting Started
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
+### 1. Clone the Repository
 ```bash
-npm run reset-project
+git clone https://github.com/your-username/react-native-healthkit-expo.git
+cd react-native-healthkit-expo
+```
+### 2. Install Dependencies
+```bash
+npm install
+```
+### 3. Run the App
+```bash
+npx expo run:ios
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## 📂 Project Structure
+```
+├── app/
+│   ├── _layout.tsx           # Main app layout
+│   ├── index.tsx             # Main app screen
+│── assets/
+│── hooks/
+│   │── useHealthData.ts      # Custom hook for Apple Health data
+├── app.json                  # Expo configuration
+├── ios/                      # Native iOS files
+├── README.md                 # You're here!
+```
 
-## Learn more
+## 📚 Use Cases
+- **Fitness Tracker:** Auto-log steps and calories for gamified goals.
+- **Sleep Analyzer:** Track sleep duration for wellness insights.
+- **Health Monitor:** Alert on irregular heart rates.
 
-To learn more about developing your project with Expo, look at the following resources:
+## 🤝 Contributing
+Contributions are welcome! 🙌 Fork the repo, create a branch, and submit a pull request. Check issues for tasks or report bugs.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## 📜 License
+MIT License. See [LICENSE](https://github.com/Haider-Mukhtar/ReactNative-Apple-Health-IOS/blob/main/LICENSE) for details.
 
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Happy coding! Build something amazing with Apple Health in 2025! 💻
